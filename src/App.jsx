@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Contacts from './Pages/Contacts'
-import Regiester from './Pages/Regiester'
+import Register from './Pages/Register'
 
 function App() {
 
@@ -11,9 +11,9 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route exact path='/Kalvium' element={<Home />}  >         Kalvium   </Route>
-        <Route exact path='/Contact' element={<Contacts />}>       Contacts  </Route>
-        <Route exact path='/Registration' element={<Regiester />}> Register  </Route>
+        <Route exact path='/' element={<Home />}  ></Route>
+        <Route exact path='/Contact' element={<Contacts />}></Route>
+        <Route exact path='/Registration' element={<Register />}></Route>
       </Routes>
     </>
   )
